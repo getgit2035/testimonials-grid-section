@@ -1,0 +1,209 @@
+/* colors appear in the code editor */
+
+:root {
+    --ModerateViolet: hsl(263, 55%, 52%);
+    --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --VeryDarkBlackishBlue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    --LightGray: hsl(0, 0%, 81%);
+    --LightGrayishBlue: hsl(210, 46%, 95%);
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+    min-width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.section-one { grid-area: header; }
+.section-two { grid-area: menu; }
+.section-three { grid-area: main; }
+.section-four { grid-area: right; }
+.section-five { grid-area: footer; }
+
+.grid-container {
+    width: 70%;
+    display: grid;
+    grid-template-areas:
+    'header header menu  footer'
+    'main right right footer';
+    gap: 30px;
+    background-color: hsl(210, 46%, 95%);
+    padding: 10px;
+}
+
+.section-one {
+    background-color: hsl(263, 55%, 52%);
+    border-radius: 10px;
+    padding: 30px;
+    opacity: 0.9;
+}
+
+.section-two {
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.section-three {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.section-four {
+    background-color: hsl(219, 29%, 14%);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.section-five {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#avatar-one {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#intro-one {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+
+#avatar-two {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#intro-two {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+
+#avatar-three {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#intro-three {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+#avatar-four {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.others {
+    font-size: 0.875rem;
+    color: hsl(0, 0%, 100%);
+}
+
+#intro-four {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+
+#avatar-five {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.jean-kira {
+    font-size: 0.875rem;
+    color: hsl(219, 29%, 14%);
+}
+
+#intro-five {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.verified {
+    font-size: 0.75rem;
+    color: hsl(0, 0%, 81%);
+}
+
+img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 20px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+}
+
+.kira-jean {
+    color: hsl(217, 19%, 35%);
+    font-weight: 600;
+}
+
+p {
+    Font-size: 0.8125rem;
+    color: hsl(0, 0%, 81%);
+    line-height: 1.5;
+}
+
+span {
+    Font-size: 20px;
+}
+
+#daniel {
+    border: solid;
+    border-color: hsl(0, 0%, 81%);
+    border-width: 2px;
+}
+
+#patrick {
+    border: solid;
+    border-color: hsl(263, 55%, 52%);
+    border-width: 2px;
+}
+
+svg {
+    position: absolute;
+    z-index: -1;
+    top: 5.5%;
+    left: 32%;
+}
+
+@media only screen and (max-width: 375px) {
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    svg {
+        top: 4%;
+        left: 53%;
+    }
+
+}
